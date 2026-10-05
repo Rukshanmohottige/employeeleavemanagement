@@ -16,7 +16,7 @@ public class LeaveRequest {
     private String reason;
     private String status; // PENDING, APPROVED, REJECTED
 
-    // Many-to-One Relationship: නිවාඩු ඉල්ලීම් කිහිපයක් එක් සේවකයෙකුට අයිති විය හැක
+    // Many-to-One Relationship: 
     @ManyToOne
     @JoinColumn(name = "employee_id", nullable = false)
     private Employee employee;
